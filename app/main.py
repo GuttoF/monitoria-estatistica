@@ -111,10 +111,11 @@ for day in weekdays_list:
         )
 
 df_availability = pd.DataFrame(overall_availability_data)
+df_availability_filtered = df_availability[df_availability["Periodo"] != "Indisponível"]
 
-if not df_availability.empty:
+if not df_availability_filtered.empty:
     fig_availability = px.bar(  # type: ignore
-        df_availability,
+        df_availability_filtered,
         x="Dia",
         y="Alunos",
         color="Periodo",
@@ -125,14 +126,13 @@ if not df_availability.empty:
             "Periodo": "Período",
         },
         category_orders={
-            "Periodo": ["Manhã", "Tarde", "Noite", "Indisponível"],
+            "Periodo": ["Manhã", "Tarde", "Noite"],
             "Dia": weekdays_list,
         },
         color_discrete_map={
             "Manhã": "#1f77b4",
             "Tarde": "#ff7f0e",
             "Noite": "#2ca02c",
-            "Indisponível": "#d62728",
         },
         barmode="group",
     )
