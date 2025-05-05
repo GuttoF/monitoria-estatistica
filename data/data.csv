@@ -1,0 +1,6 @@
+Aluno,Em quais horários você está disponível? [Segunda-feira],Em quais horários você está disponível? [Terça-feira],Em quais horários você está disponível? [Quarta-feira],Em quais horários você está disponível? [Quinta-feira],Em quais horários você está disponível? [Sexta-feira],Em quais horários você está disponível? [Sábado],Você conseguiu uma nota satisfatória na N1?,Qual foi o maior desafio na prova?
+1,Tarde,Tarde,Tarde,Tarde,Tarde,"Manhã, Tarde",Não,falta de atenção
+2,Noite,Noite,Noite,Noite,Noite,"Tarde, Noite",Sim,Não sabia do assunto
+3,Noite,,,,,Noite,Não,Não sabia do assunto
+4,Noite,,,,,"Tarde, Noite",Não,Não sabia do assunto
+5,Manhã,Manhã,Manhã,Manhã,Manhã,"Tarde, Noite",Não,Não estudei o suficiente.
